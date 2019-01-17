@@ -38,4 +38,6 @@ print(tweets_research.count())
 #            for i in range(len(media)):
 #                print(media[i]["media_url_https"], tweet.favorite_count)
 
+#Vive le vent d'hiver
+
 print(datetime.now() - startTime)
