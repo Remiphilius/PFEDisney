@@ -2,9 +2,9 @@ import tweepy
 from datetime import datetime
 startTime = datetime.now()
 
-auth = tweepy.OAuthHandler('FEblETXlgkePuX8wPzxBAjZGb', 'X4ujxbhgJ4abbgiOvaxR7QB840C8Pm4bcWB9qhQY71ifXYj1FL')
-auth.set_access_token("127976412-r3ADD5H0lS0xBFuTT6qr9iDmaYgFOmlut1zwoNdw",
-                      "FBJZk5J9djcpDYfIF7wjT1zSfaPJGLht5YOrqwQECQp4t")
+auth = tweepy.OAuthHandler('lddW5cut4polesn9vmcjYiASi', 'RTSgn1qwwQii2ZOIZqrwtEyUu5qads6C5d0qXK4qVBAYX0nw1M')
+auth.set_access_token("1082883910978191360-gQO0MD6wtOIasaZpDdGLKc6dUEwLyf",
+                      "pBJ26U2xhtFqMs9KhSwYUAapH3KQfOr7CcsMfIOvNIdpC")
 
 api = tweepy.API(auth)
 
@@ -15,7 +15,8 @@ api = tweepy.API(auth)
 
 tweets_research = tweepy.Cursor(api.search, q="disneyland paris").pages()
 
-print(tweets_research.count())
+for i in tweets_research:
+    print(i)
 
 #for tweet in tweets_research:
 #    print(tweet.author.screen_name, ":", tweet.text, twee)
