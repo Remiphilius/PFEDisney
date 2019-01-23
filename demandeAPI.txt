@@ -1,0 +1,4 @@
+1. I want to try the tweepy package on python. I want to try to do an opinion analysis on tweets.
+2. I only want to analyze the contents of public tweets. I do not know yet precisely which methods I am going to use. I want to apply NLP algorithms.
+3. My use case will not involve any tweeting or retweeting.
+4. I do not think there will be any display of any tweet except maybe one I tweeted myself. The point of this project is more about a global analysis on a big amount of tweets, no user will be quoted or cited.

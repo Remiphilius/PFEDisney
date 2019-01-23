@@ -1,4 +1,7 @@
+from typing import List, Any
+
 import tweepy
+import pickle as pkl
 from datetime import datetime
 startTime = datetime.now()
 
@@ -13,10 +16,16 @@ api = tweepy.API(auth)
 #    message = tweet.text.split(' ')
 #    print(' '.join([word for word in message if not word[:8] == "https://"]))
 
-tweets_research = tweepy.Cursor(api.search, q="disneyland paris").pages()
+tweets_research = tweepy.Cursor(api.search, q="disneyland paris marvel").items()
 
-for i in tweets_research:
-    print(i)
+list_tweets = list()
+for tweetDLP in tweets_research:
+    list_tweets.append(tweetDLP)
+
+print(list_tweets.__sizeof__())
+
+with open('listtweets.pkl', 'wb') as f:
+    pkl.dump(list_tweets, f)
 
 #for tweet in tweets_research:
 #    print(tweet.author.screen_name, ":", tweet.text, twee)
