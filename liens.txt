@@ -3,3 +3,6 @@ http://talnarchives.atala.org/TALN/TALN-2015/taln-2015-court-016.pdf
 
 http://www2.agroparistech.fr/ufr-info/membres/cornuejols/Teaching/Master-AIC/PROJETS-M2-AIC/PROJETS-2016-2017/analyse-de-sentiments(lambert-bellard-lorre-kouki).pdf
 # Etude sur analyse de sentiments de tweets par agroParisTech
+
+https://huguesgaillard.com/analyse-de-sentiments-en-temps-reel-sur-twitter/
+# Pour le streaming sur tweepy
