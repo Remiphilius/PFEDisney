@@ -1,0 +1,5 @@
+http://talnarchives.atala.org/TALN/TALN-2015/taln-2015-court-016.pdf
+# Lien pour Canéphore, bdd annotée de 10000 tweets en francais. Github ou il y a tout ce qu'il faut.
+
+http://www2.agroparistech.fr/ufr-info/membres/cornuejols/Teaching/Master-AIC/PROJETS-M2-AIC/PROJETS-2016-2017/analyse-de-sentiments(lambert-bellard-lorre-kouki).pdf
+# Etude sur analyse de sentiments de tweets par agroParisTech
