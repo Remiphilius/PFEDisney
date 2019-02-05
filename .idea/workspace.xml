@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74d5a75f-a016-4af0-a89c-87c275226783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sens_critique/filter-negativecrtitics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PFEDisney.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PFEDisney.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sens_critique/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sens_critique/beautiful soup positive reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/sens_critique/beautiful soup positive reviews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,22 +12,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sens_critique/beautiful soup positive reviews.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+            <state relative-caret-position="342">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/beautifuSoup negative reviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="122">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="15" selection-end-column="171" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/description.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/filter-negativecrtitics.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -53,6 +57,7 @@
       <list>
         <option value="$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py" />
         <option value="$PROJECT_DIR$/sens_critique/beautiful soup positive reviews.py" />
+        <option value="$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py" />
       </list>
     </option>
   </component>
@@ -77,6 +82,12 @@
             <path>
               <item name="PFEDisney" type="b2602c69:ProjectViewProjectNode" />
               <item name="PFEDisney" type="462c0819:PsiDirectoryNode" />
+              <item name="bases_de_donnees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFEDisney" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFEDisney" type="462c0819:PsiDirectoryNode" />
+              <item name="bases_de_donnees" type="462c0819:PsiDirectoryNode" />
               <item name="sens_critique" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -91,6 +102,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bases_de_donnees" />
       <recent name="$PROJECT_DIR$/sens_critique" />
     </key>
   </component>
@@ -106,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.beautifuSoup negative reviews">
+  <component name="RunManager" selected="Python.beautiful soup positive reviews (1)">
     <configuration name="beautifuSoup negative reviews" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PFEDisney" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +132,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="beautiful soup positive reviews (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PFEDisney" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bases_de_donnees/sens_critique" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.beautiful soup positive reviews (1)" />
         <item itemvalue="Python.beautifuSoup negative reviews" />
       </list>
     </recent_temporary>
@@ -178,10 +212,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1867" height="1084" extended-state="6" />
+    <frame x="53" y="-4" width="1867" height="1084" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32903227" />
       <window_info anchor="bottom" id="Python Console" weight="0.32903227" />
@@ -189,7 +224,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44731182" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -226,9 +261,6 @@
     <entry file="file://$PROJECT_DIR$/sens_critique/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sens_critique/description.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/demandeAPI.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -238,17 +270,23 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sens_critique/beautiful soup positive reviews.py">
+    <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/description.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/filter-negativecrtitics.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/beautifuSoup negative reviews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        <state relative-caret-position="122">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="15" selection-end-column="171" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sens_critique/beautifuSoup negative reviews.py">
+    <entry file="file://$PROJECT_DIR$/bases_de_donnees/sens_critique/beautiful soup positive reviews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="342">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>

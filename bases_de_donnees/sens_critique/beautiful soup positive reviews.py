@@ -10,6 +10,7 @@ def cleanhtml(raw_html):
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
 
+
 #faire une liste des films marvel avec leurs IDs
 film = ['Avengers','Les_Gardiens_de_la_galaxie','Iron_Man','X_Men_Le_Commencement','Spider_Man','X_Men_Days_of_Future_Past','Logan','Avengers_Infinity_War','Spider_Man_2','Captain_America_Le_Soldat_de_l_hiver',
         'X_Men','Captain_America_Civil_War','X_Men_2','Deadpool','Avengers_L_Ere_d_Ultron','Les_Gardiens_de_la_galaxie_Vol_2','Doctor_Strange']
