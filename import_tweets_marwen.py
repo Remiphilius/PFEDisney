@@ -38,27 +38,27 @@ def get_tweets(query, max_tweets):
         ct += 1
         print(tweets.max_id)
 
-    pd.set_option('display.max_colwidth', -1)
-    # We create a pandas dataframe as follows:
-    data = pd.DataFrame(data=[tweet.full_text for tweet in tweets], columns=['Tweets'])
-    # We add relevant data:
-    data['len'] = np.array([len(tweet.full_text) for tweet in tweets])
-    data['ID'] = np.array([tweet.id for tweet in tweets])
-    data['Date'] = np.array([tweet.created_at for tweet in tweets])
-    data['Source'] = np.array([tweet.source for tweet in tweets])
-    data['Likes'] = np.array([tweet.favorite_count for tweet in tweets])
-    data['RTs'] = np.array([tweet.retweet_count for tweet in tweets])
-    display(data)
+        pd.set_option('display.max_colwidth', -1)
+        # We create a pandas dataframe as follows:
+        data = pd.DataFrame(data=[tweet.full_text for tweet in tweets], columns=['Tweets'])
+        # We add relevant data:
+        data['len'] = np.array([len(tweet.full_text) for tweet in tweets])
+        data['ID'] = np.array([tweet.id for tweet in tweets])
+        data['Date'] = np.array([tweet.created_at for tweet in tweets])
+        data['Source'] = np.array([tweet.source for tweet in tweets])
+        data['Likes'] = np.array([tweet.favorite_count for tweet in tweets])
+        data['RTs'] = np.array([tweet.retweet_count for tweet in tweets])
+        display(data)
 
-    header = [re.sub(' +', ' ', i.replace('\n', ' ')) for i in data.columns]
+        header = [re.sub(' +', ' ', i.replace('\n', ' ')) for i in data.columns]
 
-    with open('test.csv', 'w') as fp:
-        writer = csv.writer(fp, delimiter=',')
-        writer.writerow(header)
-        for row in data.iterrows():
-            writer.writerow([i for i in list(row)])
+        with open('tweepy_results.csv', 'w') as fp:
+            writer = csv.writer(fp, delimiter=',')
+            writer.writerow(header)
+            for row in data.iterrows():
+                writer.writerow([i for i in list(row)])
 
-    data = pd.DataFrame(data, columns=header)
-    data.to_csv('tweepy'+datetime.now().__str__()+'.csv')
+        data = pd.DataFrame(data, columns=header)
+        data.to_csv('tweepy_results.csv')
 
-get_tweets(['Disney', 'saison', 'Marvel'], 1000)
+get_tweets(['Disneyland','marvel'], 10000)

@@ -16,7 +16,7 @@ api = tweepy.API(auth)
 #    message = tweet.text.split(' ')
 #    print(' '.join([word for word in message if not word[:8] == "https://"]))
 
-tweets_research = tweepy.Cursor(api.search, q="disneyland paris marvel").items()
+tweets_research = tweepy.Cursor(api.search, q="disneyland paris").items()
 
 list_tweets = list()
 for tweetDLP in tweets_research:
