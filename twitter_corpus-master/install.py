@@ -45,16 +45,16 @@ def get_user_params():
 def dump_user_params( user_params ):
 
     # dump user params for confirmation
-    print 'Input:    '   + user_params['inList']
-    print 'Output:   '   + user_params['outList']
-    print 'Raw data: '   + user_params['rawDir']
+    print('Input:    '   + user_params['inList'])
+    print('Output:   '   + user_params['outList'])
+    print('Raw data: '   + user_params['rawDir'])
     return
 
 
 def read_total_list( in_filename ):
 
     # read total fetch list csv
-    fp = open( in_filename, 'rb' )
+    fp = open(in_filename, 'rt')
     reader = csv.reader( fp, delimiter=',', quotechar='"' )
 
     total_list = []
@@ -79,7 +79,7 @@ def purge_already_fetched( fetch_list, raw_dir ):
             # attempt to parse json file
             try:
                 parse_tweet_json( tweet_file )
-                print '--> already downloaded #' + item[2]
+                print('--> already downloaded #' + item[2])
             except RuntimeError:
                 rem_list.append( item )
         else:
@@ -118,16 +118,16 @@ def download_tweets( fetch_list, raw_dir ):
 
         # print status
         trem = get_time_left_str( idx, fetch_list, download_pause_sec )
-        print '--> downloading tweet #%s (%d of %d) (%s left)' % \
-              (item[2], idx+1, len(fetch_list), trem)
+        print('--> downloading tweet #%s (%d of %d) (%s left)' % \
+              (item[2], idx+1, len(fetch_list), trem))
 
         # pull data
         url = 'http://api.twitter.com/1/statuses/show.json?id=' + item[2]
         urllib.urlretrieve( url, raw_dir + item[2] + '.json' )
 
         # stay in Twitter API rate limits 
-        print '    pausing %d sec to obey Twitter API rate limits' % \
-              (download_pause_sec)
+        print('    pausing %d sec to obey Twitter API rate limits' % \
+              (download_pause_sec))
         time.sleep( download_pause_sec )
 
     return
@@ -136,7 +136,7 @@ def download_tweets( fetch_list, raw_dir ):
 def parse_tweet_json( filename ):
     
     # read tweet
-    print 'opening: ' + filename
+    print('opening: ' + filename)
     fp = open( filename, 'rb' )
 
     # parse json
@@ -183,20 +183,20 @@ def build_output_corpus( out_filename, raw_dir, total_list ):
                 writer.writerow( full_row )
 
             except RuntimeError:
-                print '--> bad data in tweet #' + item[2]
+                print('--> bad data in tweet #' + item[2])
                 missing_count += 1
 
         else:
-            print '--> missing tweet #' + item[2]
+            print('--> missing tweet #' + item[2])
             missing_count += 1
 
     # indicate success
     if missing_count == 0:
-        print '\nSuccessfully downloaded corpus!'
-        print 'Output in: ' + out_filename + '\n'
+        print('\nSuccessfully downloaded corpus!')
+        print('Output in: ' + out_filename + '\n')
     else: 
-        print '\nMissing %d of %d tweets!' % (missing_count, len(total_list))
-        print 'Partial output in: ' + out_filename + '\n'
+        print('\nMissing %d of %d tweets!' % (missing_count, len(total_list)))
+        print('Partial output in: ' + out_filename + '\n')
 
     return
 
