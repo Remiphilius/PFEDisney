@@ -26,15 +26,25 @@ class StdOutListener(StreamListener):
 
         all_data = json.loads(data)
 
-        tweet = all_data["text"]
+        if all_data['truncated'] == True:
+            tweet = all_data["extended_tweet"]["full_text"]
+            print("**************************")
+        else:
+            tweet = all_data["text"]
+
+        #tweet = all_data["extended_tweet"]["full_text"]
         username = all_data["user"]["screen_name"]
+        language = all_data["lang"]
+        id = all_data["id"]
+        date = all_data["created_at"]
+
 
         with open('bases_de_donnees/tweets_streaming.txt', 'a', encoding='utf-8') as f:
-            f.write(username+', '+tweet.replace("\n", " ")+'\n')
-            f.close()  # fermer le fichier
+            f.write(username+', '+tweet.replace("\n", " ")+', '+language+', '+str(id)+', '+date+'\n')
+            f.close()
+        
 
-
-        print((username, tweet))
+        print((username, tweet, language, id))
 
         return True
 
@@ -42,20 +52,21 @@ class StdOutListener(StreamListener):
         print(status_code)
         if status_code == 420:
             # returning False in on_data disconnects the stream
+            '''
             time.sleep(7200)
 
             tweets_research = tweepy.Cursor(api.search, q="disneyland paris",lang='fr',)
 
-            for username, tweet in limit_handled(tweets_research.items()):
+            for tweet in limit_handled(tweets_research.items()):
                 with open('bases_de_donnees/tweets_streaming.txt', 'a', encoding='utf-8') as f:
-                    f.write(username + ', ' + tweet.replace("\n", " ") + '\n')
+                    f.write(tweet.id + ', ' + tweet.full_text.replace("\n", " ") + '\n')
                     f.close()
             return True
 
-        else:
+        else:'''
             return False
 
 l = StdOutListener()
 myStream = Stream(auth, l)
-myStream.filter(track=['paris disneyland'], lang='fr', is_async=True)
+myStream.filter(track=['paris disneyland', 'disneylandparis'], is_async=True)
 

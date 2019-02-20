@@ -1,0 +1,79 @@
+'text': 'So excited not only to be going home to see my family during half term but also to be going to Disneyland Paris! Ve… https://t.co/uEyeChzmEM'
+'filter_level': 'low'
+'in_reply_to_screen_name': None
+'in_reply_to_status_id': None
+'id': 1097444636929470465
+'favorited': False
+'in_reply_to_user_id': None
+'entities': {
+	'symbols': []
+	'urls': [{'expanded_url': 'https://twitter.com/i/web/status/1097444636929470465'
+		'display_url': 'twitter.com/i/web/status/1…'
+		'indices': [117, 140]
+		'url': 'https://t.co/uEyeChzmEM'}]
+	'hashtags': []
+	'user_mentions': []}
+'truncated': True
+'retweeted': False
+'source': '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>'
+'coordinates': None
+'retweet_count': 0
+'contributors': None
+'created_at': 'Mon Feb 18 10:36:05 +0000 2019'
+'in_reply_to_status_id_str': None
+'place': None
+'is_quote_status': False
+'user': {
+	'profile_text_color': '333333'
+	'notifications': None
+	'follow_request_sent': None
+	'profile_sidebar_fill_color': 'DDEEF6'
+	'id': 1038801965910843393
+	'profile_background_image_url_https': ''
+	'profile_link_color': '1DA1F2'
+	'protected': False
+	'following': None
+	'default_profile': True
+	'profile_sidebar_border_color': 'C0DEED'
+	'statuses_count': 31
+	'profile_use_background_image': True
+	'favourites_count': 38
+	'friends_count': 60
+	'default_profile_image': False
+	'utc_offset': None
+	'location': None
+	'time_zone': None
+	'screen_name': 'MissMKBrandon'
+	'description': 'Year 3 Teacher. Trained with @TeachFirst and working tirelessly to help close the education gap📚'
+	'name': 'MissBrandon'
+	'url': None
+	'is_translator': False
+	'profile_background_image_url': ''
+	'profile_background_tile': False
+	'profile_background_color': 'F5F8FA'
+	'profile_banner_url': 'https://pbs.twimg.com/profile_banners/1038801965910843393/1536504752'
+	'verified': False
+	'id_str': '1038801965910843393'
+	'followers_count': 23
+	'created_at': 'Sun Sep 09 14:51:03 +0000 2018'
+	'geo_enabled': False
+	'profile_image_url_https': 'https://pbs.twimg.com/profile_images/1038802236288245760/LjARB4YS_normal.jpg'
+	'listed_count': 0
+	'contributors_enabled': False
+	'lang': 'en'
+	'translator_type': 'none'
+	'profile_image_url': 'http://pbs.twimg.com/profile_images/1038802236288245760/LjARB4YS_normal.jpg'}
+'lang': 'en'
+'geo': None
+'id_str': '1097444636929470465'
+'quote_count': 0
+'in_reply_to_user_id_str': None
+'favorite_count': 0
+'timestamp_ms': '1550486165636'
+'extended_tweet': {
+	'display_text_range': [0, 148]
+	'full_text': 'So excited not only to be going home to see my family during half term but also to be going to Disneyland Paris! Very good for my #teacherwellbeing!'
+	'entities': {
+		'symbols': [], 'urls': [], 'hashtags': [{'text': 'teacherwellbeing', 'indices': [130, 147]}]
+		'user_mentions': []}}
+	'reply_count': 0}
