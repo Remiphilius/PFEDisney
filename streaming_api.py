@@ -64,9 +64,9 @@ class StdOutListener(StreamListener):
                 if len(tweet) > 1:  # on enleve l'@ et les url
                     list_words_no_at = [word for word in tweet.split(' ') if not (('@' in word) or ('http' in word))]
                     tweet = ' '.join(list_words_no_at)
-                with open('bases_de_donnees/tweet_streaming.csv', 'a', encoding='utf-8') as f:
-                    f.write(username + 'µ ' + tweet.replace("\n", " ") + 'µ ' + language + 'µ' + str(
-                        id) + 'µ ' + date + 'µ ' + '\n')
+                with open('bases_de_donnees/tweet_streaming_isaac.csv', 'a', encoding='utf-8') as f:
+                    f.write(username + 'µ ' + tweet.replace("\n", " ") + 'µ ' + language + 'µ' + str(id) +
+                            "a" + 'µ ' + date + 'µ ' + '\n')
                     f.close()
                 print((username, tweet, language, id))
 
