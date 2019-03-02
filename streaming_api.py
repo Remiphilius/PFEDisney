@@ -49,7 +49,7 @@ class StdOutListener(StreamListener):
 
         list_lang_wanted = ["fr"]  # langues que l'on souhaite garder
 
-        list_user_denied = ["dlp", "disney", "promo"]  # mots que l'on ne veut pas dans le nom des utilisateurs
+        list_user_denied = ["dlp", "disney", "promo", "parcmoinscher"]  # mots que l'on ne veut pas dans le nom des utilisateurs
 
         list_user_accepted = ['foliedisney']  # utilisateurs qui ne passent pas le filtre précédent mais
         # pour lesquels on force le passage
@@ -64,7 +64,7 @@ class StdOutListener(StreamListener):
                 if len(tweet) > 1:  # on enleve l'@ et les url
                     list_words_no_at = [word for word in tweet.split(' ') if not (('@' in word) or ('http' in word))]
                     tweet = ' '.join(list_words_no_at)
-                with open('bases_de_donnees/tweet_streaming_isaac.csv', 'a', encoding='utf-8') as f:
+                with open('bases_de_donnees/tweet_streaming.csv', 'a', encoding='utf-8') as f:
                     f.write(username + 'µ ' + tweet.replace("\n", " ") + 'µ ' + language + 'µ' + str(id) +
                             "a" + 'µ ' + date + 'µ ' + '\n')
                     f.close()
