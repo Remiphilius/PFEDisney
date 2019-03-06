@@ -16,7 +16,7 @@ def limit_handled(cursor):
         try:
             yield cursor.next()
         except tweepy.RateLimitError:
-            time.sleep(15 * 60)
+            time.sleep(8 * 60 * 60)
 
 
 class StdOutListener(StreamListener):
@@ -49,9 +49,9 @@ class StdOutListener(StreamListener):
 
         list_lang_wanted = ["fr"]  # langues que l'on souhaite garder
 
-        list_user_denied = ["dlp", "disney", "promo", "parcmoinscher"]  # mots que l'on ne veut pas dans le nom des utilisateurs
+        list_user_denied = ["dlp", "disney", "promo", "parcmoinscher", "vcdservice", "radiocontact"]  # mots que l'on ne veut pas dans le nom des utilisateurs
 
-        list_user_accepted = ['foliedisney']  # utilisateurs qui ne passent pas le filtre précédent mais
+        list_user_accepted = []  # utilisateurs qui ne passent pas le filtre précédent mais
         # pour lesquels on force le passage
 
         if (all_data['lang'] in list_lang_wanted) and (tweet[:2] != 'RT') and any(
@@ -65,8 +65,8 @@ class StdOutListener(StreamListener):
                     list_words_no_at = [word for word in tweet.split(' ') if not (('@' in word) or ('http' in word))]
                     tweet = ' '.join(list_words_no_at)
                 with open('bases_de_donnees/tweet_streaming.csv', 'a', encoding='utf-8') as f:
-                    f.write(username + 'µ ' + tweet.replace("\n", " ") + 'µ ' + language + 'µ' + str(id) +
-                            "a" + 'µ ' + date + 'µ ' + '\n')
+                    f.write(username + 'µ ' + tweet.replace("\n", " ") + 'µ ' + language + 'µ' + str(
+                        id) + 'aµ ' + date + 'µ ' + '\n')
                     f.close()
                 print((username, tweet, language, id))
 

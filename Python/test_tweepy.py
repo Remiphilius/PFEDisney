@@ -16,16 +16,16 @@ api = tweepy.API(auth)
 #    message = tweet.text.split(' ')
 #    print(' '.join([word for word in message if not word[:8] == "https://"]))
 
-tweets_research = tweepy.Cursor(api.search, q="disneyland paris").items()
+#tweets_research = tweepy.Cursor(api.search, q="disneyland paris").items()
 
-list_tweets = list()
-for tweetDLP in tweets_research:
-    list_tweets.append(tweetDLP)
+#list_tweets = list()
+#for tweetDLP in tweets_research:
+#    list_tweets.append(tweetDLP)
 
-print(list_tweets.__sizeof__())
+#print(list_tweets.__sizeof__())
 
-with open('listtweets.pkl', 'wb') as f:
-    pkl.dump(list_tweets, f)
+#with open('listtweets.pkl', 'wb') as f:
+#    pkl.dump(list_tweets, f)
 
 #for tweet in tweets_research:
 #    print(tweet.author.screen_name, ":", tweet.text, twee)
@@ -37,7 +37,9 @@ with open('listtweets.pkl', 'wb') as f:
 #my_lt = moi.timeline(include_rts=False)[0]
 #print(my_lt.place.full_name)
 
-#donald = api.get_user("realDonaldTrump")
+donald = api.get_user("Ljeanmn")
+
+print(donald)
 
 #interessant = tweepy.Cursor(api.user_timeline, screen_name="@realDonaldTrump", tweet_mode="extended").items()
 
